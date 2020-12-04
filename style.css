@@ -164,8 +164,7 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    /*width: 100%;*/
-    padding: 20px 80px 0 170px;
+    padding: 20px 60px 0 170px;
     height: 450px;
     margin-bottom: 40px;
 }
@@ -198,6 +197,70 @@ body {
     margin-bottom: 0;
 }
 
+.photo_choix {
+    position: relative;
+}
+
+.button_photo {
+    z-index: 10;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_photo:hover {
+    border: 1.5px solid #f7864b;
+}
+
+.button_photo>img {
+    height: 100%;
+    width: auto;
+}
+
+.button_photo>img:hover {
+    opacity: 0.5;
+}
+
+.button_gauche_un {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+.button_gauche_deux {
+    position: absolute;
+    left: -35px;
+    top: 55px;
+}
+
+.button_gauche_trois {
+    position: absolute;
+    left: -55px;
+    top: 115px;
+}
+
+.button_droit_un {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.button_droit_deux {
+    position: absolute;
+    right: -35px;
+    top: 55px;
+}
+
+.button_droit_trois {
+    position: absolute;
+    right: -55px;
+    top: 115px;
+}
+
 .photo_elevage{
     min-width: 400px;
     max-width: 400px;
@@ -212,10 +275,14 @@ body {
 }
 
 .photo_elevage>img {
-    width: 130%;
+    width: 100%;
     height: auto;
-    margin-bottom: -55px;
 }
+
+.hidden {
+    display: none;
+}
+
 
 
 
@@ -408,9 +475,9 @@ body {
 
 .nous_trouver {
     width: 100%;
-    height: 610px;
+    height: 550px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     position: relative;
     overflow: hidden;
 }
@@ -425,7 +492,7 @@ body {
 }
 
 .background_photo>img {
-    width: 120%;
+    width: 100%;
     height: auto;
 }
 
@@ -443,31 +510,55 @@ body {
 .box_text_noustrouver {
     z-index: 4;
     color: white;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 40%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
     margin-left: 170px;
     font-size: 17px;
 }
 
+.text_noustrouver {
+    width: 40%;
+}
+
 .text_noustrouver>p {
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.illustrationzerodechet {
+    width: 22%;
+    height: 100%;
+    z-index: 10;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.illustrationzerodechet>img {
+    width: 100%;
+    height: auto;
+}
+
+.box_reseau {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    color: white;
 }
 
 .box_logo {
-    display: flex;
+   display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 50px;
+    width: 100%;
     margin-top: 20px;
-    margin-bottom: 40px;
 }
 
 .logo_facebook {
@@ -507,40 +598,11 @@ body {
     filter: invert(47%) sepia(67%) saturate(481%) hue-rotate(338deg) brightness(103%) contrast(95%);
 }
 
-.button_rdv {
-    width: 100px;
-    padding: 13px 10px 10px 10px;
-    background-color: #f7864b;
-    color: white;
-    font-weight: 500;
-    text-align: center;
-    border-radius: 5px;
-    box-shadow: 1px 1px 5px 0 #1f2229;
-    font-size: 15px;
-}
-
-.button_rdv:hover {
-    background-color: #e47b3e;
-    cursor: pointer;
-}
-
-.container_map {
-    z-index: 4;
-    width: 40%;
-    position: absolute;
-    top:0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    margin-top: 40px;
-}
-
 
 
 .contact {
-    margin-top: 100px;
-    /*margin-left: 170px;*/
+    padding-top: 100px;
+    padding-left: 170px;
     height: 600px;
     display: flex;
     flex-direction: column;
@@ -548,13 +610,13 @@ body {
     overflow: hidden;
 }
 
-.titre_formulaire {
+.titre_contact {
     font-size: 25px;
     font-weight: 700;
     color: #f7864b;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     width: 100%;
-    text-align: center;
+    text-align: left;
 }
 
 .background_contact {
@@ -562,32 +624,35 @@ body {
     filter: invert(88%) sepia(4%) saturate(2076%) hue-rotate(328deg) brightness(104%) contrast(97%);
     opacity: 0.1;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -100px;
+    left: -100px;
     text-align: center;
 }
 
 .background_contact>img{
-    width: 100%;
-    height: auto;
+    height: 100%;
+    width: auto;
 }
 
 .content_contact {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
 }
 
 .box_contact {
-    /*width: 50%;*/
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     margin-top: 0px;
-    margin-left: 170px;
+}
+
+.text_map {
+    margin-bottom: 40px;
 }
 
 .address {
@@ -620,87 +685,95 @@ body {
     margin-left: 10px;
 }
 
-.formulaire_contact {
+.container_map {
+    z-index: 4;
     width: 40%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    margin-left: 50px;
-}
-
-.input_entrance {
-    height: 30px;
-    width: 100%;
-    padding-left: 10px;
-    margin-bottom: 20px;
-    margin-left: 15px;
-    border-radius: 4px;
-    border: 1px solid #beb9b9;
-}
-
-.input_text {
-    height: 150px;
-    width: 100%;
-    padding-top: 10px;
-    margin-bottom: 25px;
-    padding-left: 10px;
-    margin-left: 15px;
-    border-radius: 4px;
-    border: 1px solid #beb9b9;
-}
-
-.input_text::placeholder {
-    font-weight: 200;
-    font-family: 'Tajawal', sans-serif;
-    font-size: 12px;
-    color: #68738a;
-}
-
-.input_entrance:focus {
-    outline: none;
-    border: 2px solid #e47b3e;
-}
-
-.input_text:focus {
-    outline: none;
-    border: 2px solid #e47b3e;
-}
-
-.input_entrance::placeholder {
-    font-weight: 200;
-    font-family: 'Tajawal', sans-serif;
-    font-size: 12px;
-    color: #68738a;
+    align-items: center;
+    height: 100%;
+    padding-left: 20px;
 }
 
 
 
 .footer {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
     color: #68738a;
-    border-top: 1px solid #f7864b;
+    border-top: 2px solid #f7864b;
     background-color: white;
     font-weight: 400;
-    font-size: 10px;
+    font-size: 17px;
+    width: 100%;
 }
 
-.box {
+.box_reseau {
+    color: #68738a;
+    margin-top: 30px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 
-.illustrationzerodechet {
-    height: 100px;
+.text_reseaux {
+    color: #68738a;
+    margin-bottom: 10px;
+    font-weight: 500;
 }
 
-.illustrationzerodechet>img {
-    height: 100%;
-    width: auto;
+.box_logo_footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
+.logo_facebook_footer {
+    width: 25px;
+    border: 1.5px solid black;
+    border-radius: 100%;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    filter: invert(43%) sepia(15%) saturate(538%) hue-rotate(182deg) brightness(101%) contrast(92%);
+}
+
+.logo_facebook_footer>img {
+    width: 100%;
+    height: auto;
+}
+
+.logo_foodbevg_footer {
+    width: 100px;
+    filter: invert(43%) sepia(15%) saturate(538%) hue-rotate(182deg) brightness(101%) contrast(92%);
+}
+
+.logo_foodbevg_footer>img {
+    width: 100%;
+    height: auto;
+}
+
+.logo_facebook_footer:hover {
+    filter: invert(88%) sepia(34%) saturate(7442%) hue-rotate(325deg) brightness(98%) contrast(98%);
+}
+
+.logo_foodbevg_footer:hover {
+    filter: invert(88%) sepia(34%) saturate(7442%) hue-rotate(325deg) brightness(98%) contrast(98%);
+}
+
+.box {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 10px;
+    font-weight: 200;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}

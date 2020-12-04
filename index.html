@@ -54,7 +54,7 @@
 
     <section class="elevage">
         <div class="box_elevage">
-            <div class="text_elevage" style="margin-right: 20px">
+            <div class="text_elevage" style="margin-right: 70px">
                 <span class="title">Escargots fermiers 100% français</span><br>
                 <br>
                 <p>Au sein de notre ferme hélicicole, nous élevons et transformons
@@ -72,21 +72,47 @@
                 <p class="lastsentence">Pour nous, l’approvisionnement en <span class="orange">matières
                     premières locales</span> est une priorité.</p>
             </div>
-            <div class="photo_elevage">
-                <img src="images/elevagebucolique.jpg"/>
+            <div class="photo_choix">
+                <div class="photo_elevage">
+                    <img src="images/elevagebucolique.jpg" id="photo_3_ferme" class="hidden"/>
+                    <img src="images/escargotgrosplan.jpg" id="photo_1_ferme"/>
+                    <img src="images/chariotescargot.jpg" id="photo_2_ferme" class="hidden"/>
+                </div>
+                <div class="button_photo button_gauche_un">
+                    <img src="images/escargotgrosplan.jpg">
+                </div>
+                <div class="button_photo button_gauche_deux">
+                    <img src="images/chariotescargot.jpg">
+                </div>
+                <div class="button_photo button_gauche_trois">
+                    <img src="images/elevagebucolique.jpg">
+                </div>
             </div>
         </div>
 
         <div class="box_elevage">
-            <div class="photo_elevage" style="margin-right: 20px">
-                <img src="images/bebeescargot.jpg"/>
+            <div class="photo_choix">
+                <div class="photo_elevage">
+                <img src="images/bebeescargot.jpg" id="photo_3_lutte"/>
+                <img src="images/boucs.jpg" id="photo_1_lutte" class="hidden"/>
+                <img src="images/bebeescargotfeuille.jpg" id="photo_2_lutte" class="hidden"/>
             </div>
-            <div class="text_elevage">
+                <div class="button_photo button_droit_un">
+                <img src="images/boucs.jpg">
+            </div>
+                <div class="button_photo button_droit_deux">
+                <img src="images/bebeescargotfeuille.jpg">
+            </div>
+                <div class="button_photo button_droit_trois">
+                <img src="images/bebeescargot.jpg">
+            </div>
+            </div>
+            <div class="text_elevage" style="margin-left: 70px">
                 <span class="title">Lutte biologique et physique</span><br>
                 <br>
                 <p>Les Escargots des enclos est une ferme gérée en agriculture raisonnée.
                     <span class="orange"> Deux boucs</span> remplacent la classique
-                    débrousailleuse. <span class="orange">Aucun herbicide</span> n'est utilisé,
+                    débrousailleuse. <span class="ora   nge">Aucun herbicide</span> n'est utilisé,
                     les parcs sont désherbés à la main.</p>
 
                 <p>Les naissains sont introduits en mai et mettent 4 mois à devenir adulte.
@@ -105,7 +131,7 @@
         </div>
 
         <div class="box_elevage">
-            <div class="text_elevage" style="margin-right: 20px">
+            <div class="text_elevage" style="margin-right: 70px">
                 <h3 class="title">Préparation soignée et recette du terroir</h3>
                 <p>Une fois sa taille adulte atteinte, les escargots sont <span class="orange">ramassés
                     à la main.</span> Suite à quoi, ils sont soumis à un jeun, une estivation
@@ -124,8 +150,21 @@
                     en escargotine, en brochette ou encore nature pour les intégrer
                     à vos propres recettes!</p>
             </div>
-            <div class="photo_elevage">
-                <img src="images/escargotcuitG.jpg" style="margin-bottom: 0px; width: 190%; margin-left: 50px"/>
+            <div class="photo_choix">
+                <div class="photo_elevage">
+                    <img src="images/escargotcuit.jpg" id="photo_3_recette" class="hidden"/>
+                    <img src="images/recettemaison.jpg" id="photo_1_recette" class="hidden"/>
+                    <img src="images/brochette.jpg" id="photo_2_recette"/>
+                </div>
+                <div class="button_photo button_gauche_un">
+                    <img src="images/recettemaison.jpg">
+                </div>
+                <div class="button_photo button_gauche_deux">
+                    <img src="images/brochette.jpg">
+                </div>
+                <div class="button_photo button_gauche_trois">
+                    <img src="images/escargotcuit.jpg">
+                </div>
             </div>
         </div>
     </section>
@@ -282,13 +321,17 @@
 
                 <p>Le <b>Samedi matin</b> au <span class="orange">Marché de Saint Renan</span> à Saint Renan
                     (29290).<br>
-
+                    <br>
                     Le <b>Dimanche matin</b> au <span class="orange">Marché Saint-Louis</span> à Brest (29200), juste
                     derrière les halles.</p>
-
-                <p>Pour connaître les dates et lieux des marchés de Noël et les points de ventes disponibles,
-                    <b>SUIVEZ-NOUS!</b></p>
             </div>
+            <div class="illustrationzerodechet">
+                <img src="images/zerodechet.png"/>
+            </div>
+        </div>
+        <div class="box_reseau">
+            <p>Pour connaître les dates et lieux des marchés de Noël et les points de ventes disponibles,
+                <b>SUIVEZ-NOUS!</b></p>
             <div class="box_logo">
                 <a href="https://www.facebook.com/EscargotsEnclos/">
                     <div class="logo_facebook">
@@ -301,32 +344,27 @@
                     </div>
                 </a>
             </div>
-            <div class="text_map2">
-                <p>Vous pouvez également venir chercher vos escargots <span
-                        class="orange"> à la ferme sur rendez-vous</span>,
-                    l'occasion de voir l'élevage de plus près!</p>
-            </div>
-            <div class="button_rdv">Prendre RDV</div>
         </div>
-        <div class="container_map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2646.009772298367!2d-4.0281256847544356!3d48.456342036885054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4811450d213f59ad%3A0xb9dfb82da96714d5!2sKerroch%20Bras%2C%2029400%20Lampaul-Guimiliau!5e0!3m2!1sfr!2sfr!4v1606485923328!5m2!1sfr!2sfr"
-                    width="90%" height="450" frameborder="0" style="" allowfullscreen="" aria-hidden="false"
-                    tabindex="0"></iframe>
-        </div>
+
     </section>
 
     <section class="contact">
-        <div class="titre_formulaire">Contactez-nous</div>
+        <div class="titre_contact">Contactez-nous</div>
         <div class="background_contact">
             <img src="images/formeescargot.png"/>
         </div>
         <div class="content_contact">
             <div class="box_contact">
+                <div class="text_map">
+                    <p>Vous pouvez également venir chercher vos escargots <span
+                            class="orange"> à la ferme sur rendez-vous</span>,
+                        l'occasion de voir l'élevage de plus près!</p>
+                </div>
                 <div class="address">
                     <b>Coordonnées</b>
-                        <br><br>
-                        Laure NOEL<br>
-                        LES ESCARGOTS DES ENCLOS<br>
+                    <br><br>
+                    Laure NOEL<br>
+                    LES ESCARGOTS DES ENCLOS<br>
                     <br>
                     Lieu dit Kerroch<br>
                     29400 LAMPAUL GUIMILIAU
@@ -348,11 +386,10 @@
                     </div>
                 </div>
             </div>
-            <div class="formulaire_contact">
-                <input type="text" id="name" placeholder="Nom" class="input_entrance">
-                <input type="text" id="email" placeholder="Email" class="input_entrance">
-                <textarea id="message" placeholder="Message" class="input_text"></textarea>
-                <div class="button_rdv">Envoyer</div>
+            <div class="container_map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2646.009772298367!2d-4.0281256847544356!3d48.456342036885054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4811450d213f59ad%3A0xb9dfb82da96714d5!2sKerroch%20Bras%2C%2029400%20Lampaul-Guimiliau!5e0!3m2!1sfr!2sfr!4v1606485923328!5m2!1sfr!2sfr"
+                        width="100%" height="355" frameborder="0" style="" allowfullscreen="" aria-hidden="false"
+                        tabindex="0"></iframe>
             </div>
         </div>
         </div>
@@ -360,9 +397,9 @@
     </section>
 
     <section class="footer">
-        <section class="box">
+        <section class="box_reseau">
             <div class="text_reseaux">
-                Tous nos points de vente sur
+                Suivez-nous
             </div>
             <div class="box_logo_footer">
                 <a href="https://www.facebook.com/EscargotsEnclos/">
@@ -371,29 +408,15 @@
                     </div>
                 </a>
                 <a href="https://www.foodbevg.com/FR/Lampaul-Guimiliau/140648649676327/Escargots-des-Enclos">
-                    <div class="logo_foodbevg footer">
+                    <div class="logo_foodbevg_footer">
                         <img src="images/logofoodbevg2.png"/>
                     </div>
                 </a>
             </div>
         </section>
-        <div class="box">
-            <div class="text_dechet">
-                Soutenez notre engagement :
-            </div>
-            <div class="illustrationzerodechet">
-                <img src="images/zerodechet.png"/>
-            </div>
-        </div>
-        <div class="box">
-            <div class="mentionslegales">
-                <div class="lien">Mentions légales</div>
-                <div class="content"></div>
-
-            </div>
-            copyright 2020<br>
-            site réalisé par Webeleon<br>
-        </div>
+        <section class="box">
+            copyright 2020
+        </section>
     </section>
 
 </section>
