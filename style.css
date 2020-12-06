@@ -214,14 +214,6 @@ body {
 
 .button_photo:hover {
     border: 1.5px solid #f7864b;
-}
-
-.button_photo>img {
-    height: 100%;
-    width: auto;
-}
-
-.button_photo>img:hover {
     opacity: 0.5;
 }
 
@@ -279,9 +271,6 @@ body {
     height: auto;
 }
 
-.hidden {
-    display: none;
-}
 
 
 
@@ -343,6 +332,8 @@ body {
 .text_about>p>b {
     font-weight: 700;
 }
+
+
 
 
 .presse {
@@ -709,7 +700,7 @@ body {
     width: 100%;
 }
 
-.box_reseau {
+.box_reseau_footer {
     color: #68738a;
     margin-top: 30px;
     margin-bottom: 20px;
