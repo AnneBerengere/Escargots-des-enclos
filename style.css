@@ -69,6 +69,10 @@ body {
     justify-content: flex-end;
 }
 
+.menu>a {
+    text-decoration: none;
+}
+
 .button {
     height: 100%;
     display: flex;
@@ -78,6 +82,7 @@ body {
     padding-right: 25px;
     padding-left: 25px;
     font-weight: 300;
+    color: #68738a;
 }
 
 .button:hover {
@@ -85,7 +90,7 @@ body {
     border-bottom: 2px solid #e47b3e;
     cursor: pointer;
     padding-bottom: 8px;
-    font-weight: 500;
+    text-decoration: none;
 }
 
 
@@ -154,8 +159,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    /*padding: 40px 90px 0px 170px;*/
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 }
 
 .box_elevage {
@@ -279,10 +283,10 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
 }
 
 .photos_patchwork {
+    margin-top: 70px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -337,10 +341,7 @@ body {
 
 
 .presse {
-    margin-top: 50px;
-    margin-bottom: 100px;
     width: 100%;
-    /*height: 630px;*/
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -360,7 +361,7 @@ body {
     width: 100%;
     background-image: linear-gradient(90deg, #f7864b, #a45643);
     position: absolute;
-    top : 124px;
+    top : 254px;
     left: 0;
 }
 
@@ -465,8 +466,9 @@ body {
 
 
 .nous_trouver {
+    margin-top: 130px;
     width: 100%;
-    height: 550px;
+    height: 650px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -483,6 +485,7 @@ body {
 }
 
 .background_photo>img {
+    margin-top: 100px;
     width: 100%;
     height: auto;
 }
@@ -496,9 +499,11 @@ body {
     height: 100%;
     background-color: #68738a;
     opacity: 0.85;
+    margin-top: 100px;
 }
 
 .box_text_noustrouver {
+    margin-top: 130px;
     z-index: 4;
     color: white;
     width: 100%;
@@ -513,7 +518,6 @@ body {
 }
 
 .text_noustrouver>p {
-    margin-top: 60px;
     margin-bottom: 30px;
 }
 
@@ -521,8 +525,6 @@ body {
     width: 22%;
     height: 100%;
     z-index: 10;
-    margin-top: 50px;
-    margin-left: 40px;
 }
 
 .illustrationzerodechet>img {
@@ -538,7 +540,7 @@ body {
     justify-content: center;
     width: 100%;
     height: 50px;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 10px;
     color: white;
 }
